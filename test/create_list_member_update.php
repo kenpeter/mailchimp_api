@@ -8,8 +8,6 @@ require '../lib/MailchimpClient.php';
 
 // use it
 use \Classy\MailchimpClient;
-use Psr\Http\Message\ResponseInterface;
-use GuzzleHttp\Exception\RequestException;
 
 // my config
 $config = include('../config.php');
@@ -17,21 +15,21 @@ $config = include('../config.php');
 // init
 $client = new MailchimpClient($config->apikey);
 
+// lists request
+$req_list = new \GuzzleHttp\Psr7\Request('GET', 'lists');
 
-$promise = $client->requestAsync('GET', 'https://us12.api.mailchimp.com/3.0/lists');
-$promise->then(
-  function (ResponseInterface $res) {
-    echo "good!";
-    echo $res->getStatusCode() . "\n";
-  },
-  function (RequestException $e) {
-    echo "bad!";
-    echo $e->getMessage() . "\n";
-    echo $e->getRequest()->getMethod();
-  }
-);
+// promise
+$promise = $client
+  ->sendAsync($req_list)
+  ->then(function ($res) {
+    $obj = json_decode( $res->getBody() );
+    // always get the first list
+    $first_list_id = $obj->lists[0]->id;
+    echo $first_list_id;
 
-echo "end!!";
+  });
+$promise->wait();
+
 
 /*
 $data = array(

@@ -15,7 +15,7 @@ $config = include('../config.php');
 // init
 $client = new MailchimpClient($config->apikey);
 
-
+// change from subscribed to unsubscribed
 $data = array(
   "status" => "unsubscribed"
 );
