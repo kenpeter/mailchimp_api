@@ -1,0 +1,15 @@
+As the test task, can you please implement MailChimp API v3 with the following functionality:
+
+
+Creating new list(s)
+
+
+
+Adding new member(s) to the list
+
+
+Updating/modifying member(s) within a list
+
+
+
+MailChimp API uses RESTful architecture, so I would recommend using Guzzle PHP library to consume their API.
