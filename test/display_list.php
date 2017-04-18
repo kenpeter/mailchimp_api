@@ -19,10 +19,7 @@ $client = new MailchimpClient($config->apikey);
 $data = $client->getData('lists');
 $data = json_decode($data);
 $lists = $data->lists;
-
-// get the first one
-echo "\n--- the first list id ---\n";
-print_r($lists[0]->id);
-echo "\n";
+// print
+print_r($lists);
 
 // Create new list
