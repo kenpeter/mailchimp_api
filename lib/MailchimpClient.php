@@ -74,18 +74,6 @@ class MailchimpClient
   {
     $res = $this->client->request('GET', $uri);
 
-    // test
-    //echo $res->getStatusCode();
-    // "200"
-    //print_r( $res->getHeader('content-type') );
-    // 'application/json; charset=utf8'
-
-    // encode to pass string around.
-    // decode means decode the string.
-    // now after json_decode, it becomes obj.....
-    // so can use print_r
-    // print_r( json_decode($mybody) );
-
     // $mybody is json string......
     return $data = $res->getBody();
   }
