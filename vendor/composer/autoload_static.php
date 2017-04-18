@@ -23,6 +23,14 @@ class ComposerStaticInit116a1744e42743325963d860d330030e
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'D' => 
+        array (
+            'DrewM\\MailChimp\\' => 16,
+        ),
+        'C' => 
+        array (
+            'Classy\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -41,6 +49,14 @@ class ComposerStaticInit116a1744e42743325963d860d330030e
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'DrewM\\MailChimp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drewm/mailchimp-api/src',
+        ),
+        'Classy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/classy-org/mailchimp-api-php-client/src',
         ),
     );
 

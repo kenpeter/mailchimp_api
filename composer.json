@@ -1,5 +1,7 @@
 {
     "require": {
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~6.0",
+        "drewm/mailchimp-api": "^2.4",
+        "classy-org/mailchimp-api-php-client": "^1.0"
     }
 }

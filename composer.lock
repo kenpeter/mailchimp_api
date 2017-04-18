@@ -4,9 +4,85 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffa54f14e8378e8abbd1ee165e6023f2",
-    "content-hash": "35a239f26f96a30f3493aef7e0f87f9b",
+    "hash": "5dc626e6b0481207f5106c57387d2f76",
+    "content-hash": "d4d7e96a64efbfd127d020241a81309b",
     "packages": [
+        {
+            "name": "classy-org/mailchimp-api-php-client",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/classy-org/mailchimp-api-php-client.git",
+                "reference": "3d4f4c8c7758d37978c6dd4fdd9f5ba724801e26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/classy-org/mailchimp-api-php-client/zipball/3d4f4c8c7758d37978c6dd4fdd9f5ba724801e26",
+                "reference": "3d4f4c8c7758d37978c6dd4fdd9f5ba724801e26",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Classy\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "PGBI",
+                    "email": "pbarrau@classy.org"
+                }
+            ],
+            "description": "Simple wrapper around Guzzle Http Client to interact with Mailchimp API v3.0",
+            "time": "2016-12-09 15:04:50"
+        },
+        {
+            "name": "drewm/mailchimp-api",
+            "version": "v2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drewm/mailchimp-api.git",
+                "reference": "fe480bb652f85270227bf6d639b0026a531f21fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drewm/mailchimp-api/zipball/fe480bb652f85270227bf6d639b0026a531f21fc",
+                "reference": "fe480bb652f85270227bf6d639b0026a531f21fc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*",
+                "vlucas/phpdotenv": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DrewM\\MailChimp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Drew McLellan",
+                    "email": "drew.mclellan@gmail.com",
+                    "homepage": "http://allinthehead.com/"
+                }
+            ],
+            "description": "Super-simple, minimum abstraction MailChimp API v3 wrapper",
+            "homepage": "https://github.com/drewm/mailchimp-api",
+            "time": "2017-02-16 13:24:20"
+        },
         {
             "name": "guzzlehttp/guzzle",
             "version": "6.2.3",

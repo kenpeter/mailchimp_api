@@ -1,15 +1,27 @@
-As the test task, can you please implement MailChimp API v3 with the following functionality:
-
-
-Creating new list(s)
-
-
-
-Adding new member(s) to the list
-
-
-Updating/modifying member(s) within a list
-
-
-
-MailChimp API uses RESTful architecture, so I would recommend using Guzzle PHP library to consume their API.
+Create a new list .......
+-----------------------------
+{
+	"name": "test_mailchimp",
+  "contact": {
+    "company": "MailChimp",
+    "address1": "675 Ponce De Leon Ave NE",
+    "address2": "Suite 5000",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30308",
+    "country": "US",
+    "phone": "12345678"
+  },
+	"permission_reminder": "You're receiving this email because you signed up for updates.",
+	"use_archive_bar": true,
+  "campaign_defaults": {
+    "from_name": "test",
+    "from_email": "test@test.com",
+    "subject": "test_subject",
+    "language": "en"
+  },
+	"notify_on_subscribe": "",
+	"notify_on_unsubscribe": "",
+	"email_type_option": true,
+	"visibility": "pub"
+}
