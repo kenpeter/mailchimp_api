@@ -15,7 +15,7 @@ $config = include('../config.php');
 // init
 $client = new MailchimpClient($config->apikey);
 
-// Create new list
+// Create a new list
 $data = array(
   "name" => "test_mailchimp",
   "contact" => array(
@@ -42,4 +42,6 @@ $data = array(
 	"visibility" => "pub",
 );
 
-$client->request('POST', 'lists', ['json' => $data]);
+$return = $client->request('POST', 'lists', ['json' => $data]);
+
+//var_dump($return);
