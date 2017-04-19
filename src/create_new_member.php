@@ -23,7 +23,7 @@ $data = array(
 
 // It seems api is a bit slow, after post the request....
 // need to wait for the result for the web interface.
-$list_id = '1309575198';
+$list_id = '7fa67852fc'; // hardcode
 $uri = 'lists/'. $list_id. '/members';
 $return = $client->request('POST', $uri, ['json' => $data]);
 var_dump($return);

@@ -17,7 +17,7 @@ $client = new MailchimpClient($config->apikey);
 
 // It seems api is a bit slow, after post the request....
 // need to wait for the result for the web interface.
-$list_id = '1309575198';
+$list_id = '7fa67852fc';
 $uri = 'lists/'. $list_id. '/members';
 $data = $client->request('GET', $uri);
 $obj = json_decode( $data->getBody() );
