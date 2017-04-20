@@ -1,5 +1,5 @@
 <?php
 
 return (object) array(
-  'apikey' => '292bae37c631ac3ba03ed0640b44e6c3-us12'
+  'apikey' => 'a8bea4b3f923e0feb0596cae68163ea6-us12'
 );
